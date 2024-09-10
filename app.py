@@ -23,7 +23,8 @@ class Enemy:
         print(f"{self.name} attacked {player.name} for {self.attack} damage.")
 
 # Create player and enemy instances
-player = Player("Adventurer", 100, 20)
+player = Player("Rendalith", 200, 20)
+player2 = Player("Thalisean", 100, 20)
 enemy = Enemy("Goblin", 50, 15)
 
 # Game loop
@@ -45,8 +46,9 @@ while True:
             print("You were defeated by the Goblin!")
             break
     elif choice == 2:
-        print(f"Your health: {player.health}")
-        print(f"Enemy health: {enemy.health}")
+        print(f"{player.name}'s health: {player.health}")
+        print(f"{player2.name}'s health: {player2.health}")
+        print(f"{enemy.name}'s health: {enemy.health}")
     elif choice == 3:
         print("Quitting the game...")
         break
